@@ -1,10 +1,10 @@
 
 // HTML의 각 Elements들
-const nameForm = document.querySelector(".name-form");
-const nameInPut = document.querySelector(".name-form__input");
-const greetingsHeader = document.querySelector(".greetings"); 
+const nameForm = document.querySelector("#name-form");
+const nameInPut = document.querySelector("#name-form__input");
+const greetingsHeader = document.querySelector("#greetings"); 
 
-const USERNAME_KEY = "username";
+const USERNAME_KEY = "";
 
 function onNameForm(event) {
     event.preventDefault();
