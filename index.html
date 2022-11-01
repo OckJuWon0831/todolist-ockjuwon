@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="name-form.css">
+        <link rel="stylesheet" href="css/name-form.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +9,31 @@
     </head>
     <body>
         
-        <!-- Name form -->
-        <form id = "name-form" class="hidden">
-            <input maxlength="15" required name="username" id="name-form__input" type="text" placeholder="What is your name?"/>
-            <input id="name-form__btn" type="submit" value="Click!"/>
+        <div class="name-form__header">
+            <!-- Name form -->
+            <form id = "name-form" class="hidden">
+                <input maxlength="15" required name="username" id="name-form__input" type="text" placeholder="What is your name?"/>
+                <input id="name-form__btn" type="submit" value="Click!"/>
+            </form>
+            <h1 id = "greetings" class="hidden"></h1>
+        </div>
+
+        <!-- Clock -->
+        <div id="auto-clock">
+            <h2></h2>
+        </div>
+
+        <!-- Todo list -->
+        <form id="todo-form">
+            <input type="text" placeholder="Insert your list"/>
         </form>
-        <h1 id = "greetings" class="hidden"></h1>
+        <ul id="todo-list">
+        </ul>
 
-        <script src="name-form.js"></script>
-
+        <!-- imported JS files -->
+        <script src="js/name-form.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/todo-list.js"></script>
     </body>
 </html>
 
